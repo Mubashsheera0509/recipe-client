@@ -1,0 +1,94 @@
+body {
+  background-color: #121212; /* Darker shade for a sleek look */
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Card Styling */
+.card {
+  background-color: #1e1e1e; /* Dark gray for a smooth contrast */
+  border-radius: 10px; /* Smooth rounded corners */
+  border: none; /* Remove default border */
+  color: white;
+}
+
+/* Primary Button */
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Navbar Container */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: linear-gradient(90deg, #0f0f0f, #1a1a1a);
+  border-bottom: 2px solid #333;
+  animation: fadeSlideIn 0.8s ease-out;
+}
+
+/* Nav Buttons */
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Button Styles */
+.btn {
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* Glow Effect */
+@keyframes glow {
+  0% { box-shadow: 0 0 5px rgba(255, 255, 255, 0.2); }
+  50% { box-shadow: 0 0 15px rgba(255, 255, 255, 0.4); }
+  100% { box-shadow: 0 0 5px rgba(255, 255, 255, 0.2); }
+}
+
+/* Button Colors */
+.login { background: #007bff; color: white; }
+.register { background: #ffc107; color: black; }
+.add { background: #17a2b8; color: white; }
+.profile { background: #ff9800; color: black; }
+.logout { background: #dc3545; color: white; }
+.saved { background: #f8f9fa; color: black; }
+
+/* Hover Effects */
+.btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+  animation: glow 0.5s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
